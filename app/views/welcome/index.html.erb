@@ -37,8 +37,8 @@
         <li><a href="#home-sec">Home</a></li>
         <li><a href="#features-sec">Features</a></li>
         <li><a href="#advance-sec">Advance</a></li>
-        <li><a href="#gallery-sec">Sign Up</a></li>
-        <li><a href="#location-sec">Login</a></li>
+        <li><a href="#signup-sec">Sign Up</a></li>
+        <li><a href="#login-sec">Login</a></li>
       </ul>
     </div>
 
@@ -183,124 +183,44 @@
   </div>
 
 </div>
+
 <!--END JUST SECTION-->
-<section id="gallery-sec">
-
-
+<section id="signup-sec">
   <div class="container ">
     <div class="row text-center min-set">
       <div class="col-md-12">
-        <h2><mark class="head-glow">Gallery </mark>Section </h2>
+        <h2><mark class="head-glow">Sign Up </mark></h2>
         <hr class="sub-hr" />
       </div>
     </div>
-    <div id="port-folio">
-      <div class="row ">
-        <ul id="filters">
-          <li><span class="filter active" data-filter="HTML BOOTSTRAP WORDPRESS">All </span></li>
-          <li><span class="filter">/</span></li>
-          <li><span class="filter" data-filter="HTML">HTML</span></li>
-          <li><span class="filter">/</span></li>
-          <li><span class="filter" data-filter="BOOTSTRAP">BOOTSTRAP</span></li>
-          <li><span class="filter">/</span></li>
-          <li><span class="filter" data-filter="WORDPRESS">WORDPRESS</span></li>
-        </ul>
-        <div class="col-md-4 col-sm-4">
-
-          <div class="portfolio-item BOOTSTRAP mix_all" data-cat="BOOTSTRAP">
-
-
-            <a class="preview" href="assets/img/portfolio/11.jpg">
-
-              <img src="assets/img/portfolio/11.jpg" class="img-responsive " alt="" />
-            </a>
-
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4">
-
-          <div class="portfolio-item HTML mix_all" data-cat="HTML">
-
-
-            <a class="preview" href="assets/img/portfolio/22.jpg">
-
-              <img src="assets/img/portfolio/22.jpg" class="img-responsive " alt="" />
-            </a>
-
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4">
-
-          <div class="portfolio-item WORDPRESS mix_all" data-cat="WORDPRESS">
-
-
-            <a class="preview" href="assets/img/portfolio/33.jpg">
-
-              <img src="assets/img/portfolio/33.jpg" class="img-responsive " alt="" />
-            </a>
-
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4">
-
-          <div class="portfolio-item BOOTSTRAP mix_all" data-cat="BOOTSTRAP">
-
-            <a class="preview" href="assets/img/portfolio/44.jpg">
-
-              <img src="assets/img/portfolio/44.jpg" class="img-responsive " alt="" />
-            </a>
-
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4">
-
-          <div class="portfolio-item HTML mix_all" data-cat="HTML">
-
-
-            <a class="preview" href="assets/img/portfolio/55.jpg">
-
-              <img src="assets/img/portfolio/55.jpg" class="img-responsive " alt="" />
-            </a>
-
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4">
-
-          <div class="portfolio-item HTML mix_all" data-cat="HTML">
-
-            <a class="preview" href="assets/img/portfolio/66.jpg">
-
-              <img src="assets/img/portfolio/66.jpg" class="img-responsive " alt="" />
-            </a>
-          </div>
-
-        </div>
+    <div class="row text-center min-set">
+      <div class="col-md-12" style="padding-bottom: 20px;">
+        <h3>Sign Up Today!</h3>
+        <p>
+          Join SetList for free!
+        </p>
+        <%= link_to '<button type="button">Sign Up</button>'.html_safe, signup_path %>
       </div>
-
-
     </div>
   </div>
 </section>
+
 <!-- END GALLERY  SECTION -->
 
-<section id="location-sec">
+<section id="login-sec">
   <div class="container">
     <div class="row text-center min-set">
       <div class="col-md-12">
-        <h2><mark class="head-glow">OUR </mark>LOCATION </h2>
+        <h2><mark class="head-glow">LOGIN </mark></h2>
         <hr class="sub-hr" />
       </div>
     </div>
     <div class="row">
-
-      <div class="col-md-12 text-center">
-        <h3>BinaryTheme.com</h3>
-        <br />
-        <h4>234/78A , New Fake Street, </h4>
-        <h4>New York Lane, </h4>
-        <h4>United States</h4>
-        <br />
-        <a href="http://www.binarytheme.com/" target="_blank" style="color: #fff; font-size: 12px;">Design by : binarytheme.com</a>
+      <div class="col-md-12 text-center" style="padding-bottom: 25px;">
+        <p>
+          If you are already a member of SetList, login here.
+        </p>
+        <%= link_to '<button type="button">Login</button>'.html_safe, login_path %>
       </div>
     </div>
 
