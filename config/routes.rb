@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'welcome#index', as: 'home'
+  root :to => 'welcome#index'
 
   resources :sessions, only: [:new, :create, :destroy]
   get 'signup', to: 'users#new', as: 'signup'
