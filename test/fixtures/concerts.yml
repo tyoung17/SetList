@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  artist: MyString
+  venue: MyString
+  location: MyString
+  date: 2017-05-01
+  price: 9.99
+
+two:
+  artist: MyString
+  venue: MyString
+  location: MyString
+  date: 2017-05-01
+  price: 9.99

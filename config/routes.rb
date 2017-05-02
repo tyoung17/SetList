@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :concerts
   root 'welcome#index', as: 'home'
   root :to => 'welcome#index'
 
