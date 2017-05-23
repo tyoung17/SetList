@@ -30,7 +30,8 @@ class UsersController < ApplicationController
 
     #respond_to do |format|
       if @user.save
-        #sessions[:user_id] = @user.id
+        session[:user_id] = @user.id
+        session[:logged_in] = true
         redirect_to root_url, notice: 'Account was successfully created.'
         #format.html { redirect_to @user, notice: 'User was successfully created.' }
         #format.json { render :show, status: :created, location: @user }
