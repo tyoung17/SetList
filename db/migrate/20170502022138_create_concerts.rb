@@ -5,7 +5,7 @@ class CreateConcerts < ActiveRecord::Migration
       t.string :venue
       t.string :location
       t.date :date
-      t.decimal :price
+      t.decimal :price, scale: 2
 
       t.timestamps null: false
     end

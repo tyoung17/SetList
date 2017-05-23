@@ -35,9 +35,9 @@
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
         <li><a href= <%= root_url %> >Featured</a></li>
-        <li><a href= <%= 'concerts#index' %>>Add Concert</a></li>
-        <li><a href= <%= signup_path %> >Search</a></li>
-        <li><a href= <%= user_path %> >Profile</a></li>
+        <li><a href= <%= new_concert_path %>>Add Concert</a></li>
+        <li><a href= <%=  %> >Search</a></li>
+        <li><a href= <%= users_path %> >Profile</a></li>
         <li><a href= <%= logout_path %> >Logout</a></li>
       </ul>
     </div>
@@ -50,39 +50,44 @@
   <div class="container">
     <div class="row text-center min-set">
       <div class="col-md-12">
-        <h2><mark class="head-glow">Awesome </mark>Features </h2>
+        <h2><mark class="head-glow">Featured</mark> </h2>
         <hr class="sub-hr" />
       </div>
     </div>
     <div class="row">
       <div class="col-md-4 text-center">
         <div class="img-set">
-          <%= image_tag("concert.jpg", size: "250x150") %>
+          <%= image_tag("LifeonMars.jpg", size: "250x150") %>
         </div>
-        <h3>Attend a Concert</h3>
+        <h3>Life on Mars</h3>
         <hr />
         <p>
-          You will be able to check into a concert and make plans
-          with other people who are also attending that concert.
+          May 26, Washington - $10.00
+          Gypsy Sally's
         </p>
       </div>
 
       <div class="col-md-4 text-center">
         <div class="main-img">
-          <%= image_tag("coachella-tent.jpg", size: "350x175") %>
+          <%= image_tag("BigThief.jpg", size: "250x150") %>
         </div>
+        <h3>Big Thief</h3>
+        <hr />
+        <p>
+          June 6, Baltimore  - $10.00
+          Ottobar
+        </p>
       </div>
 
       <div class="col-md-4 text-center" style="padding-top: 10px;">
         <div class="img-set">
-          <%= image_tag("SearchIcon.jpg", size: "200x150") %>
+          <%= image_tag("Feist.jpg", size: "200x150") %>
         </div>
-        <h3>Search for Concerts</h3>
+        <h3>Feist</h3>
         <hr />
         <p>
-          SetList allows for users to search for their favorite
-          artists/bands to see when they are coming to a venue
-          near them!
+          June 7, Washington - $45.00
+          The Lincoln Theatre
         </p>
       </div>
     </div>
@@ -90,71 +95,80 @@
   </div>
 </section>
 <!--END FEATURES SECTION-->
-<section id="skill-sec">
-  <div class="overlay">
-    <div class="container">
-      <div class="row ">
-        <div class="col-lg-3 col-md-3 col-sm-3 text-center ">
-          <i class="fa fa-bullseye fa-5x"></i>
-          <h4>New Technology</h4>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <div class="img-set">
+          <%= image_tag("ElvisDepressedly.jpg", size: "250x150") %>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 text-center ">
-          <i class="fa fa-dollar fa-5x"></i>
-          <h4>Special Offers</h4>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 text-center ">
-          <i class="fa fa-comments-o fa-5x"></i>
-          <h4>Dedicated Support  </h4>
-        </div>
+        <h3>Elvis Depressedly</h3>
+        <hr />
+        <p>
+          June 8, Baltimore - $14.00
+          Metro Gallery
+        </p>
+      </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-3 text-center">
-          <i class="fa fa-user fa-5x"></i>
-          <h4>Find Friends </h4>
+      <div class="col-md-4 text-center">
+        <div class="main-img">
+          <%= image_tag("AimeeMann.jpg", size: "250x150") %>
         </div>
+        <h3>Aimee Mann</h3>
+        <hr />
+        <p>
+          June 21, Annapolis  - $50.00
+          Rams Head on Stage
+        </p>
+      </div>
 
+      <div class="col-md-4 text-center" style="padding-top: 10px;">
+        <div class="img-set">
+          <%= image_tag("CHON.jpg", size: "200x150") %>
+        </div>
+        <h3>CHON - The Homey Tour</h3>
+        <hr />
+        <p>
+          June 21, Baltimore - $21.00
+          Baltimore Soundstage
+        </p>
       </div>
     </div>
+
   </div>
 </section>
 <!--END SKILL SECTION-->
 <section id="advance-sec">
   <div class="container">
-    <div class="row text-center min-set">
-      <div class="col-md-12">
-        <h2><mark class="head-glow">Advanced </mark>Options </h2>
-        <hr class="sub-hr" />
-      </div>
-    </div>
     <div class="row">
       <div class="col-md-4 text-center">
         <div class="img-set">
-          <%= image_tag("JonesBeachTheater.jpg", size: "250x150") %>
+          <%= image_tag("AboveAndBeyond.PNG", size: "250x150") %>
         </div>
-        <h3>Promote Your Venue!</h3>
+        <h3>Above and Beyond</h3>
         <p>
-          As an owner of a venue you will be able to promote
-          events that your venue will be hosting.
+          June 23, Washington - $40.00
+          Glow at Echostage
         </p>
       </div>
       <div class="col-md-4 text-center">
         <div class="img-set">
-          <%= image_tag("MapConcerts.jpg", size: "250x150") %>
+          <%= image_tag("T-.jpg", size: "250x150") %>
         </div>
-        <h3>Find Concerts Near You!</h3>
+        <h3>T-Rextasy</h3>
         <p>
-          SetList will be able to find all the concerts that are
-          near your location!
+          July 5, Washington - $10.00
+          Black Cat
         </p>
       </div>
       <div class="col-md-4 text-center">
         <div class="img-set">
-          <%= image_tag("ConnectWithFriends.jpg", size: "250x150") %>
+          <%= image_tag("Mitski.jpg", size: "250x150") %>
         </div>
-        <h3>Connect with Friends!</h3>
+        <h3>Mitski</h3>
         <p>
-          You will be able to connect with your friends who
-          also use SetList! You will be able to view what concerts
-          they have attended and plan on attending!
+          July 8, Washington - $20.00
+          9:30 Club
         </p>
       </div>
     </div>

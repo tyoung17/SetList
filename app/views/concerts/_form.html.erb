@@ -24,6 +24,30 @@
 
 
 <body class="row text-center min-set">
+<div class="navbar navbar-inverse navbar-fixed-top scrollclass">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">SetList </a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href= <%= concerts_path %>>Featured</a></li>
+        <li><a href= <%=  %> > Add Concert</a></li>
+        <li><a href= <%= %> >Search</a></li>
+        <li><a href=<%= users_path %> > Profile</a></li>
+        <li><a href=<%= logout_path %> > Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<br/>
+
+
 <div class="col-md-12">
 <%= form_for(@concert) do |f| %>
   <% if @concert.errors.any? %>

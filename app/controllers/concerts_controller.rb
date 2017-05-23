@@ -4,7 +4,7 @@ class ConcertsController < ApplicationController
   # GET /concerts
   # GET /concerts.json
   def index
-    @concerts = Concert.all
+    @concerts = Concert.search(params[:search])
   end
 
   # GET /concerts/1
