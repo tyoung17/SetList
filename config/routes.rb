@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :concerts
+
   root 'welcome#index', as: 'home'
   root :to => 'welcome#index'
 
@@ -9,7 +10,7 @@ Rails.application.routes.draw do
   get 'logout', to: 'sessions#destroy', as: 'logout'
 
   resources :users
-  get 'page/index'
+  get 'profile', to: 'users#edit', as: 'profile'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
